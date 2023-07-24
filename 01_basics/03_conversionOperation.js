@@ -71,3 +71,25 @@ let valueInString = String(someNumber)
 
 console.log(typeof valueInString); // this will get converted to  string
 console.log(valueInString);
+
+//---------------------------operations---------------------------------------------------------------
+
+let value = 3
+let negValue = -value
+console.log(negValue)
+
+console.log(2**3) //2 rasied to the power 3 --> output will be 8
+
+let str1 = "hello"
+let str2 = " Samar"
+let str3 = str1 + str2
+console.log(str3);
+
+console.log(1 + "2") //output--> 12
+console.log("1" + 2); //output--> 12
+
+//because there is string first therefore whole conversion is considered in string
+console.log("1" + 2 + 2); // output--> 122
+
+//because there is number addition first therefore first addition takes place followed by conversion to string
+console.log(1 + 2 + "2") //output--> 32
