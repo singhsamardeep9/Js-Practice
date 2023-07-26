@@ -49,3 +49,39 @@ Object--> Object
 Array--> Object
 function--> Object function
 */
+
+//---------------------------------------------------------------------------------------------------
+
+//There are two types of memory in Js(Stack and Heap)
+//Stack is allocated to primitive types whereas Heap is allocated to reference types
+
+let  myName = "Samardeep"
+let anotherName = myName;
+
+/*
+imp concept--> the value of variable myName does not change since a copy of value is passed to
+variable anotherName and not the actual reference of the memory, and even after changing the value
+ in variable anotherName the orignal value of myName is not changed
+*/
+
+anotherName = "Samar";
+
+console.log(myName); //output-->Samardeep
+console.log(anotherName);//output-->Samar
+
+/*
+In the case of Non Primitive types a value changed by userTwo changes the value in userOne since
+the actual reference of userOne is passed to userTwo
+*/
+
+let userOne = {
+    emailId : "email@123",
+    upiId : "user@ybl"
+}
+
+let userTwo = userOne;
+userTwo.emailId = "email321@google.com"
+//here the value of emailId in userOne also changes as that of userTwo
+
+console.log(userOne.emailId);//output-->email321@google.com
+console.log(userTwo.emailId);//output-->email321@google.com
