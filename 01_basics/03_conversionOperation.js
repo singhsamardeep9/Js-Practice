@@ -21,7 +21,7 @@ let score2 = "33abc"
 let valueInNumber2 = Number(score2)
 
 console.log(typeof valueInNumber2)
-console.log(valueInNumber2) //the output for this will be NaN--> not a numberit is also a special type
+console.log(valueInNumber2) //the output for this will be NaN--> not a number(it is also a special type)
 
 //what if we have a value "null" stored in variable
 let score3 = null;
@@ -70,7 +70,7 @@ let someNumber = 33
 let valueInString = String(someNumber)
 
 console.log(typeof valueInString); // this will get converted to  string
-console.log(valueInString);
+console.log(valueInString); //"33"
 
 //---------------------------operations---------------------------------------------------------------
 
@@ -83,7 +83,7 @@ console.log(2**3) //2 rasied to the power 3 --> output will be 8
 let str1 = "hello"
 let str2 = " Samar"
 let str3 = str1 + str2
-console.log(str3);
+console.log(str3); // output--> hello Samar
 
 console.log(1 + "2") //output--> 12
 console.log("1" + 2); //output--> 12
