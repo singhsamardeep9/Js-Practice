@@ -6,7 +6,7 @@ becuase of issue in block scope and functional scope
 const accountId = 7713203119
 let email = "singhsamardeep9@gmail.com"
 var passWrd = "12345"
-/*since js is a  safe language therefore there is a possiblity that we can declare variable without 
+/*since js is a  safe/loosely typed language therefore there is a possiblity that we can declare variable without 
 using any keyword as shown below but we should avoid it
 */
 accountCity = "Lucknow"
