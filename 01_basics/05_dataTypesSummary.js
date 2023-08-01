@@ -10,10 +10,10 @@ JS documentation states that there are only two types based on how they are stor
 
 */ 
 
-/*NOTE: It is to always remeber that a variable delared with const keyword should always be 
-assigned some value otherwise a without initialization would result in error*/
+/*NOTE: It is to remember that a variable delared with const keyword should always be 
+assigned some value otherwise without initialization it would result in error*/
 
-const  score = 100.3 //number type
+const  score = 100.3 //Number type
 const email = "singhsamardeep9@gmail.com" //string type
 const isLoggedIn = false //boolean type
 const outsideTemprature = null //null type to define no value/empty
@@ -60,7 +60,7 @@ let anotherName = myName;
 
 /*
 imp concept--> the value of variable myName does not change since a copy of value is passed to
-variable anotherName and not the actual reference of the memory, and even after changing the value
+variable anotherName and not the actual reference of the memory is passed, and even after changing the value
  in variable anotherName the orignal value of myName is not changed
 */
 
