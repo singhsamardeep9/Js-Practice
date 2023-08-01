@@ -11,7 +11,7 @@ console.log("2" > 1); //output--> true
 console.log("02" > 1);//output--> true
 
 /*NOTE--> The reason for the unpredictable result below is that equality(==) and other 
-comparision operators(<,<=,>,>=) work differntly; the compariision operators convert null to 0
+comparision operators(<,<=,>,>=) work differntly; the comparision operators convert null to 0
 and give the otput accordingly whereas equality operator(==) does not
 */
 
