@@ -37,7 +37,7 @@ console.log(myArr);//output-->[ 0, 1, 2, 3, 4 ]
 
 console.log(myArr.indexOf(9))//output--> -1(since 9 is not present in array)
 
-//some  other functions of arrays works as a questionare methods that gives resultin booleans values
+//some  other functions of arrays works as a questionare methods that gives result in booleans values
 //ex:
 console.log(myArr.includes(9))//output-->false
 
@@ -50,17 +50,17 @@ console.log(newArr);//output-->0,1,2,3,4
 console.log(typeof myArr)//output--> object
 console.log(typeof newArr);//output--> string
 
-/* *very important interview quwstion(difference b/w slice and splice)
+/* *very important interview question(difference b/w slice and splice)
 ans--> the slice function does not change the orignal array whereas the splice function
 changes the orignal array
 */
 
-console.log("A ", myArr);//output--> A  [ 0, 1, 2, 3, 4 ]
+console.log("A ", myArr);//output--> A [ 0, 1, 2, 3, 4 ]
 
 const myn1 = myArr.slice(1, 3)
 
 console.log(myn1);//output-->[ 1, 2 ]
-console.log("B ", myArr);//output--> B  [ 0, 1, 2, 3, 4 ]
+console.log("B ", myArr);//output--> B [ 0, 1, 2, 3, 4 ]
 
 
 const myn2 = myArr.splice(1, 3)
