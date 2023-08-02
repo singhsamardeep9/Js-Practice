@@ -103,3 +103,42 @@ console.log(Object.entries(tinderUser));//output-->[['userId','123abc'],['name',
 hasOwnPropety() function */
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));//output--> true
+
+
+//-----------------------------object de-structuring and JSON API intro---------------
+
+/* what is object de-structuring?
+Ans-->   destructuring is a feature introduced in ES6 that allows developers
+to extract data from arrays, objects, and maps and assign them to new, distinct variable */
+
+const course = {
+    name: "JS-Practice",
+    fees: 1000,
+    instructor: "Samardeep",
+}
+
+/*to acess the values we can use the dot notation but it will be much more easier
+if we assign each value to a different variable using object de-structuring technique*/
+
+/*Syntax: let/const{variable1,variable2} = objectName
+-->Here variable1 will be assigned the value of 1st property in the object and
+variable2 will be asigned the value of 2nd property */
+
+/*we can also perform aliasing to the variable names and directly acess the values
+stored in object through them as it would not make any difference in the output
+Syntax: let/const{variable1: alias_name1, varriable2: alias_name2}*/
+
+let{name:n,fees} = course;
+
+console.log(n);//output--> "Js-Practice"
+console.log(fees);//output--> 1000
+
+/* what is an API?
+Ans--> An API, or Application Programming Interface, is a set of defined rules that 
+enables two or more computer programs to communicate with each other.
+
+what is json?
+Ans--> JSON (JavaScript Object Notation) is an open standard file format and data interchange
+format that uses human-readable text to store and transmit data objects consisting of
+attribute-value pairs and arrays
+(json in simple words is an output format of API usually in objects and arrays of objects) */
