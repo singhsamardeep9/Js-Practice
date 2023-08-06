@@ -1,5 +1,5 @@
 /*
-prefer not to use var istead decare using let keyword
+prefer not to use var instead declare using let keyword
 becuase of issue in block scope and functional scope
 */
 
@@ -10,7 +10,7 @@ var passWrd = "12345"
 using any keyword as shown below but we should avoid it
 */
 accountCity = "Lucknow"
-//If we do not initialise a value in js  then the default value stored in variable is "Undefined"
+//If we do not initialise a value in js then the default value stored in variable is "Undefined"
 let accountState;
 
 // accountId = 2 
