@@ -26,11 +26,9 @@ these placeholders are created using ${}
 console.log(`Hello my name is ${name} and i scored ${score} runs`); //output--> Hello my name is Samar and i scored 50 runs
 
 //another way for string declaration
-
-
+//the typeof function for string declared using this method returns object
 const userName = new String('Samar')
 
-//the typeof function for string declared using this method returns object
 console.log(typeof userName)//output--> object
 
 console.log(userName);
