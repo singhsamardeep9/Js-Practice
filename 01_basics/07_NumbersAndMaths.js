@@ -27,7 +27,7 @@ console.log(num.toFixed(2));//output-->100.00 (it does this on the basis of numb
 
 //3.toPrecision(number type arguement)--> gives the precision value and returns the output in string
 const otherNum = 23.89645
-console.log(otherNum.toPrecision(4)); //output-->23.90(this value is in the form of string)
+console.log(otherNum.toPrecision(4)); //output--> "23.90" (this value is in the form of string)
 
 /* 4.toLocaleString()--> it is usually used to format the number in international number system
 and usually used where it is difficult to read the number */
@@ -50,8 +50,8 @@ console.log(hundreds.toLocaleString('en-IN')) //output--> 1,00,00,000
  console.log(Math.min(4,3,8,7)) //output--> 3
  console.log(Math.max(4,3,8,7)) //output--> 7
 
- //Math.random() by  default gives random value between 0 to 1 at every time it executes
- console.log(Math.random()); //ex-ouput-->0.698245867598343
+ //Math.random()--> every time it executes by default gives random value between 0 to 1
+ console.log(Math.random()); //e.g. Ouput-->0.698245867598343
 
  //suppose we build a software where we require a random value b/w 1 to 10
  console.log(Math.random()*10) 
