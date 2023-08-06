@@ -30,7 +30,7 @@ let valueInNumber3 = Number(score3)
 console.log(typeof valueInNumber3)//output--> Number
 console.log(valueInNumber3); //output--> 0
 
-//what is we store a value "undefined" stored in variable
+//what if we store a value "undefined" in a variable
 let score4 = undefined;
 let valueInNumber4 = Number(score4)
 
@@ -63,6 +63,7 @@ console.log(booleanValue) //output--> true
 0--> false
 ""--> false (empty string)
 "Samar"--> true(for some value in string)
+**Later we will learn the concept of truthy and falsy values
 */
 
 //conversion to string
