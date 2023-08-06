@@ -18,14 +18,14 @@ console.log(typeof myDate) //output--> object
 //how to declare a date in js
 
 let myCreatedDate = new Date(2023,0,23);
-console.log(myCreatedDate.toDateString())//output-->Mon Jan 23 2023
+console.log(myCreatedDate.toDateString())//output-->Mon Jan 23 2023(indexing starts from 0 that is why 0 in mm is replaced by Jan)
 
-//other way declare date in mm-dd-yyyy format
+//other way to declare date in mm-dd-yyyy format
 let myNewDate = new Date("01-14-2023");
 console.log(myNewDate.toString())//output-->Sat Jan 14 2023 00:00:00 GMT+0000 (Coordinated Universal Time)
 
 
-//time stamps are usually used where i make a quiz game and decide the winner  based on time
+//time stamps are usually used where i want to make a quiz game and decide the winner based on time
 let myTimeStamp = Date.now();
 console.log(myTimeStamp)//output-->1690495325029(this is the value in miliseconds w.r.t 1st Jan 1970)
  
