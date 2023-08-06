@@ -1,9 +1,9 @@
 /*
-Simple comparision operators with booleans output
+Simple comparision operators with boolean output
 <,<=,>,>=,==,!=
 */
 
-/*problem occurs when we compares two values of different data Types as shown below as the results
+/*problem occurs when we compare two values of different data Types as shown below, the results
 maybe surprising and unpredictable, these types of comparisions should always be avoided
 */
 
@@ -11,7 +11,7 @@ console.log("2" > 1); //output--> true
 console.log("02" > 1);//output--> true
 
 /*NOTE--> The reason for the unpredictable result below is that equality(==) and other 
-comparision operators(<,<=,>,>=) work differntly; the comparision operators convert null to 0
+comparision operators(<,<=,>,>=) work differently; the comparision operators convert null to 0
 and give the otput accordingly whereas equality operator(==) does not
 */
 
