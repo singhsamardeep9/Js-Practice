@@ -42,8 +42,9 @@ const obj2 = {
 }
 
 /*this method will combine the two objects similarly as we did in arrays and will result in
-obect within another object
+object within another object
 */
+
 const obj3 = { obj1, obj2}
 console.log(obj3)//output--> { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'c', '4': 'd' } }
 
@@ -58,11 +59,11 @@ returns a new object
 const obj4 = Object.assign({}, obj1,obj2)
 console.log(obj4);//output-->{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-//we can also combine two or more objects usig spread operator in an efficient manner
+//we can also combine two or more objects using spread operator in an efficient manner
 const obj5 = {...obj1,...obj2}
 console.log(obj5);//output-->{ '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
 
-//usually when we get a result froma database we get an array of objects as:
+//usually when we get a result from a database we get an array of objects as:
 
 const users = [
     {
@@ -87,7 +88,7 @@ console.log(users[1].email)//output--> h@gmail.com
 */
 console.log(Object.keys(tinderUser)); //output-->[ 'userId', 'name', 'isLoggedIn' ]
  
-//we can also do similar process with all the values of thee object
+//we can also do similar process with all the values of the object
 console.log(Object.values(tinderUser))//output-->[ '123abc', 'Samar', false ]
 
 /* Another important function that converts the object into array of arrays is Object.entries()
