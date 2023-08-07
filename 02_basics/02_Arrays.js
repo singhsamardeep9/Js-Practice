@@ -46,7 +46,8 @@ it can be an object, nodeList or string etc which is difficult to iterate theref
 console.log(Array.isArray("Samar")); //output--> false
 console.log(Array.from("Samar")); //output--> [ 'S', 'a', 'm', 'a', 'r' ]
 
-console.log(Array.from({name: "Samar"})); //output-->[](the output is an empty array because it was unable to convert it directly into array to avoid this we need to specify to create array of keys or values)
+console.log(Array.from({name: "Samar"})); /*output-->[] (the output is an empty array because it was unable to convert it 
+                                directly into array to avoid this we need to specify to create array of keys or values)*/
 
 // to create a new array from set of elements Array.of() function is used
 
