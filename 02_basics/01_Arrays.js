@@ -37,7 +37,7 @@ console.log(myArr);//output-->[ 0, 1, 2, 3, 4 ]
 
 console.log(myArr.indexOf(9))//output--> -1(since 9 is not present in array)
 
-//some  other functions of arrays works as a questionare methods that gives result in booleans values
+//some  other functions of arrays works as a questionare methods that gives result in boolean values
 //ex:
 console.log(myArr.includes(9))//output-->false
 
@@ -45,24 +45,30 @@ console.log(myArr.includes(9))//output-->false
 //ex:
 const newArr = myArr.join()
 console.log(myArr)//output-->[ 0, 1, 2, 3, 4 ]
-console.log(newArr);//output-->0,1,2,3,4
+console.log(newArr);//output--> '0,1,2,3,4'
 
 console.log(typeof myArr)//output--> object
 console.log(typeof newArr);//output--> string
 
-/* *very important interview question(difference b/w slice and splice)
+/* **very important interview question(difference b/w slice and splice)
 ans--> the slice function does not change the orignal array whereas the splice function
 changes the orignal array
+
+-->usually people come up with an answer that the slice function does not include the value at second
+index passed as an arguement whereas the splice function includes it i.e. slice works from start index
+to end index-1 and splice works from start index to end index.(This answer is not completely correct or
+we can say that this asnswer is partially wrong). The correct answer is stated abov at line 54)
 */
 
 console.log("A ", myArr);//output--> A [ 0, 1, 2, 3, 4 ]
 
 const myn1 = myArr.slice(1, 3)
 
-console.log(myn1);//output-->[ 1, 2 ]
+console.log(myn1);//output-->[ 1, 2 ](values at index 1 and 2 gets printed)
 console.log("B ", myArr);//output--> B [ 0, 1, 2, 3, 4 ]
 
 
 const myn2 = myArr.splice(1, 3)
+console.log(myn2);//output--> [ 1, 2, 3 ](values at index 1,2 and 3 gets printed but the orignal array gets reduced)
 console.log("C ", myArr);//output--> C  [ 0, 4 ]
-console.log(myn2);//output--> [ 1, 2, 3 ]
+
