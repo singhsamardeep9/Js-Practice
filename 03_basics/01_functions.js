@@ -78,3 +78,31 @@ function logginCheck(username = "sam"){
     console.log(`${username} is logged in into account`)
 }
 logginCheck();//ouput--> sam is logged in into account
+
+//---------------------------------------------------------------------------------
+/* sometimes while building a shopping cart in a s/w we do not know the number of items
+a user will add to the cart a without knowing the exact number we need to calculate the total
+amount of the  cart
+*/ 
+
+function calculatePrice(price){
+    return price
+}
+console.log(calculatePrice(200));//output-->200
+
+console.log(calculatePrice(200,400,600)) /*output-->200
+(this is because only the first value is stored in parameter price)*/
+
+/*to handle such scenarios we use rest operator(...variableName),it is similar to spread operator.
+It ssimply coonverts the values passed as arguements into an array so that it is easy to  iterate
+over an array and calculte the sum.
+It is used as:
+*/
+
+function cartPrice(...price){
+    return price
+}
+
+console.log(cartPrice(1000,1200,2000)); /*output-->[ 1000, 1200, 2000 ](here price is an array having 
+all the values passed as an arguement to the function cartPrice)*/
+
