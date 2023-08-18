@@ -83,4 +83,13 @@ callbacks,then catch and async await are used to receive answers to the requests
 //parallelism--> it focuses on the number of processors and its core for multiple process execution
 //throttling--> it means controlling the number of execution for a code
 
-//remaining topic--> promises(v.imp),then catch, async await,fetch
+//remaining topic--> promises(v.imp),then catch, async await,fetch0
+
+/* Truthy and Falsy values in js
+In case of conditionsals everything in js is converted into either true or false
+The values that get converted to true are known as truthy values wheras the values
+that do not get converted are known as falsy values
+
+Falsy values--> null, undefined, NaN (Not a Number), 0, document.all, "" (empty string)
+All the remaining values that are not falsy automatically comes under truthy values
+*/
